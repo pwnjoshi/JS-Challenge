@@ -63,3 +63,25 @@ console.log(typeof func);   // "function"
 |                | Array       | "object"      |
 |                | Function    | "function"    |
 */
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myYoutubeName = "pAwAn"
+
+let anothername = myYoutubeName
+anothername = "hello"
+
+console.log(anothername);
+console.log(myYoutubeName);
+
+
+let user = {
+email: "user@google.com",
+upi: "user@ybl"
+}
+
+let user1= user
+user.email = "pawan@microsoft.com"
+
+console.log(user.email);
+console.log(user1.email);
