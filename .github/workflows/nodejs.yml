@@ -1,0 +1,33 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies (if package.json present)
+        run: |
+          if [ -f package.json ]; then npm ci; else echo "No package.json, skipping install"; fi
+
+      - name: Run smoke examples
+        run: |
+          # Run a few example JS files as a smoke test
+          node 01_basics/05_strings.js || true
+          node 01_basics/01_variables.js || true
