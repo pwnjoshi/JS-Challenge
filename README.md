@@ -17,6 +17,7 @@ A curated collection of small JavaScript exercises and examples designed to help
 - [Development](#development)
 - [Testing](#testing)
 - [Contributing](#contributing)
+- [Acknowledgments](#acknowledgments)
 - [License](#license)
 - [Contact](#contact)
 
@@ -97,6 +98,12 @@ Contributions are welcome. If you want to add examples or improve explanations:
 4. Open a pull request describing the change
 
 Please keep examples small and well-commented.
+
+## Acknowledgments
+
+This project was created with support and inspiration from Hitesh Chaudhary and the Chai Aur Code community. Their clear explanations and practical tutorials were invaluable in my learning journey.
+
+- YouTube: https://www.youtube.com/@chaiaurcode
 
 ## License
 
