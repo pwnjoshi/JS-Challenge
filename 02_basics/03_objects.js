@@ -5,14 +5,14 @@ const mySym = Symbol("key1")
 
 const JsUser = {
     // simple properties
-    name: "Hitesh",
+    name: "Pawan",
     // property names with spaces must be quoted
-    "full name": "Hitesh Choudhary",
+    "full name": "Pawan Joshi",
     // computed property using a Symbol (won't show up in normal enumeration)
     [mySym]: "mykey1",
     age: 18,
     location: "Jaipur",
-    email: "hitesh@google.com",
+    email: "pawan@google.com",
     isLoggedIn: false,
     // array as a property
     lastLoginDays: ["Monday", "Saturday"]
@@ -28,11 +28,11 @@ const JsUser = {
 // console.log(JsUser[mySym])
 
 // Mutating a property is straightforward
-JsUser.email = "hitesh@chatgpt.com"
+JsUser.email = "pawan@google.com"
 
 // Object.freeze(JsUser) // uncomment to make the object immutable
 // After freeze, attempts to change properties are ignored (or throw in strict mode)
-JsUser.email = "hitesh@microsoft.com" // this will succeed unless the object is frozen
+JsUser.email = "pawan@microsoft.com" // this will succeed unless the object is frozen
 
 // Adding methods (functions) to the object
 JsUser.greeting = function(){
